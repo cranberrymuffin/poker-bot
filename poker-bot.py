@@ -8,7 +8,7 @@ load_dotenv()
 
 #Your bot token
 TOKEN=os.getenv("TOKEN")
-
+BOT_ID =os.getenv("BOT_ID")
 #create bot object
 client = Bot(command_prefix="!")
 
@@ -17,7 +17,7 @@ client = Bot(command_prefix="!")
 async def on_message(message):
     print(message.author.id)
     print(message.content)
-    if message.author.id != 802584001801748532:
+    if message.author.id != BOT_ID:
         if "!start" in message.content.lower():
             await message.channel.send("start game invoked!")
 
