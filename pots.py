@@ -10,6 +10,7 @@ class Pots:
             print ("Invalid bet, play again.")
     
     def payOut(self, total_quantity):
-        ##
+        ## Access Player. 
+
 
 
